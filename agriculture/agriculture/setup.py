@@ -458,6 +458,9 @@ def add_additional_permissions():
 		"write": 1
 	}).insert()
 
+def has_agriculture_access():
+	return bool({"System Manager", "Agriculture Manager", "Agriculture User"} & set(frappe.get_roles()))
+
 def cleanup_role_and_permissions():
 	for role in ["Agriculture Manager", "Agriculture User"]:
 		frappe.db.delete("Custom DocPerm", {"role": role})

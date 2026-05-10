@@ -8,6 +8,17 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "pandikunta@frappe.io"
 app_license = "GNU General Public License v3.0"
+app_home = "/desk/agriculture"
+
+add_to_apps_screen = [
+	{
+		"name": "Agriculture",
+		"logo": "/assets/frappe/images/frappe-framework-logo.svg",
+		"title": "Agriculture",
+		"route": "/desk/agriculture",
+		"has_permission": "agriculture.agriculture.setup.has_agriculture_access",
+	}
+]
 
 
 required_apps = ["erpnext"]
