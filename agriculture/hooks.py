@@ -7,7 +7,7 @@ app_description = "Agriculture"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "pandikunta@frappe.io"
-app_license = "MIT"
+app_license = "GNU General Public License v3.0"
 
 
 required_apps = ["erpnext"]
